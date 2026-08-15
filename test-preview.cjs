@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 (async () => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ executablePath: 'C:\\\\Users\\\\Asus\\\\.cache\\\\puppeteer\\\\chrome\\\\win64-152.0.7977.42\\\\chrome-win64\\\\chrome.exe' });
   const page = await browser.newPage();
   
   page.on('console', msg => console.log('PAGE LOG:', msg.text()));
