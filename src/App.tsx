@@ -3,7 +3,7 @@ import { WaveformRule } from './components/WaveformRule';
 import { FeatureCard } from './components/FeatureCard';
 import { CodeBlock } from './components/CodeBlock';
 import { Timeline } from './components/Timeline';
-import { MediaPlaceholder } from './components/MediaPlaceholder';
+
 
 const DemoLink = ({ url }: { url: string }) => (
   <a href={url} target="_blank" rel="noopener noreferrer" style={{
