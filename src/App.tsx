@@ -175,77 +175,65 @@ function App() {
 
             <h2 id="features">4. The Features That Matter Most</h2>
 
-            <div className="feature-grid">
-              <FeatureCard
-                tag="Language"
-                title="Speaking the Way India Actually Speaks"
-                description={
-                  <>
-                    <p style={{ marginBottom: '1.5rem', fontSize: '1rem' }}>Real-time Hindi/English/Hinglish detection using Devanagari script recognition + a curated dictionary. TTS voice switches on the fly to match the caller, and STT is set to language="multi" for seamless code-switching.</p>
-                    <img src="/agentansinhindi.png" alt="Hindi code-switch proof" style={{ width: '100%', borderRadius: '6px', border: '1px solid var(--mist)' }} />
-                    <DemoLink url="https://www.linkedin.com/posts/gaurkrishna_voiceforbharat-voiceforbharat-voiceforbharatchallenge-activity-7491560205730779136-exko" />
-                  </>
-                }
-              />
-              <FeatureCard
-                tag="UI / UX"
-                title="A Frontend People Actually Trust"
-                description={
-                  <>
-                    <p style={{ marginBottom: '1.5rem', fontSize: '1rem' }}>Voice-first UI with clear states (Ready · Connecting · Listening · Speaking). Animated indicators and graceful mic-permission handling built with Next.js, React, and Tailwind.</p>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                      <img src="/agentui.png" alt="Thinking state" style={{ width: '100%', borderRadius: '6px', border: '1px solid var(--mist)' }} />
-                      <img src="/agentspeaking.png" alt="Speaking state" style={{ width: '100%', borderRadius: '6px', border: '1px solid var(--mist)' }} />
-                    </div>
-                  </>
-                }
-              />
-              <FeatureCard
-                tag="Memory"
-                title="Memory, With Consent"
-                description="Persistent SQLite storage recognizes returning users. Agent always asks for consent before saving anything, storing only basic interaction data and zero sensitive PII."
-              />
-              <FeatureCard
-                tag="Tools"
-                title="Tools Instead of Guesswork"
-                description="Domain-specific tools for scheme eligibility checks and real-time data lookups. The agent gracefully handles API failures instead of hallucinating answers."
-              />
-              <FeatureCard
-                tag="Outbound"
-                title="Reaching Out First"
-                description="Outbound calling via Twilio to proactively remind users before scheme deadlines, always opening with who is calling and how to opt out."
-              />
-              <FeatureCard
-                tag="Escalation"
-                title="Knowing When to Ask for Help"
-                description={
-                  <>
-                    <p style={{ marginBottom: '1.5rem', fontSize: '1rem' }}>Handoff to a human with explicit consent, providing short, privacy-safe summaries and unique reference IDs.</p>
-                    <DemoLink url="https://www.linkedin.com/posts/gaurkrishna_voiceforbharat-voiceforbharat-murfai-activity-7493365613957124096-zmXN" />
-                  </>
-                }
-              />
-              <FeatureCard
-                tag="Analytics"
-                title="Measuring What Matters"
-                description={
-                  <>
-                    <p style={{ marginBottom: '1.5rem', fontSize: '1rem' }}>Real-time analytics dashboard tracking call outcomes automatically. No sensitive data (OTPs, PINs, transcripts) ever shown.</p>
-                    <img src="/analyticsimg.png" alt="Analytics dashboard" style={{ width: '100%', borderRadius: '6px', border: '1px solid var(--mist)' }} />
-                  </>
-                }
-              />
-              <FeatureCard
-                tag="Multi-Agent"
-                title="Bringing in a Specialist"
-                description={
-                  <>
-                    <p style={{ marginBottom: '1.5rem', fontSize: '1rem' }}>A dedicated Government Schemes Specialist agent handles complex queries, with full conversation context passed along seamlessly.</p>
-                    <img src="/agentconnectingtodiffagent.png" alt="Multi-agent handoff" style={{ width: '100%', borderRadius: '6px', border: '1px solid var(--mist)' }} />
-                    <DemoLink url="https://www.linkedin.com/posts/gaurkrishna_voiceforbharat-voiceforbharat-murfai-ugcPost-7494129563820814336-x2af" />
-                  </>
-                }
-              />
+            <ul style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+              <li><strong>Speaking the Way India Actually Speaks:</strong> Language features and seamless code-switching</li>
+              <li><strong>A Frontend People Actually Trust:</strong> Clear UI/UX with animated states</li>
+              <li><strong>Memory, With Consent:</strong> SQLite persistent storage for returning users</li>
+              <li><strong>Tools Instead of Guesswork:</strong> API tool calls for reliable data</li>
+              <li><strong>Reaching Out First:</strong> Proactive outbound reminders via Twilio</li>
+              <li><strong>Knowing When to Ask for Help:</strong> Safe human escalation</li>
+              <li><strong>Measuring What Matters:</strong> Live, privacy-safe analytics dashboard</li>
+              <li><strong>Bringing in a Specialist:</strong> Multi-agent architecture for complex queries</li>
+            </ul>
+
+            <div style={{ marginTop: '3rem' }}>
+              <div style={{ marginBottom: '4rem' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Speaking the Way India Actually Speaks</h3>
+                <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>Real-time Hindi/English/Hinglish detection using Devanagari script recognition + a curated dictionary. TTS voice switches on the fly to match the caller, and STT is set to language="multi" for seamless code-switching.</p>
+                <img src="/agentansinhindi.png" alt="Hindi code-switch proof" style={{ width: '100%', borderRadius: '8px', border: '1px solid var(--mist)', marginBottom: '1.5rem' }} />
+                <DemoLink url="https://www.linkedin.com/posts/gaurkrishna_voiceforbharat-voiceforbharat-voiceforbharatchallenge-activity-7491560205730779136-exko" />
+              </div>
+              
+              <div style={{ marginBottom: '4rem' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>A Frontend People Actually Trust</h3>
+                <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>Voice-first UI with clear states (Ready · Connecting · Listening · Speaking). Animated indicators and graceful mic-permission handling built with Next.js, React, and Tailwind.</p>
+                <img src="/agentui.png" alt="Thinking state" style={{ width: '100%', borderRadius: '8px', border: '1px solid var(--mist)', marginBottom: '1.5rem' }} />
+                <img src="/agentspeaking.png" alt="Speaking state" style={{ width: '100%', borderRadius: '8px', border: '1px solid var(--mist)' }} />
+              </div>
+
+              <div style={{ marginBottom: '4rem' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Memory, With Consent</h3>
+                <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>Persistent SQLite storage recognizes returning users. Agent always asks for consent before saving anything, storing only basic interaction data and zero sensitive PII.</p>
+              </div>
+
+              <div style={{ marginBottom: '4rem' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Tools Instead of Guesswork</h3>
+                <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>Domain-specific tools for scheme eligibility checks and real-time data lookups. The agent gracefully handles API failures instead of hallucinating answers.</p>
+              </div>
+
+              <div style={{ marginBottom: '4rem' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Reaching Out First</h3>
+                <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>Outbound calling via Twilio to proactively remind users before scheme deadlines, always opening with who is calling and how to opt out.</p>
+              </div>
+
+              <div style={{ marginBottom: '4rem' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Knowing When to Ask for Help</h3>
+                <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>Handoff to a human with explicit consent, providing short, privacy-safe summaries and unique reference IDs.</p>
+                <DemoLink url="https://www.linkedin.com/posts/gaurkrishna_voiceforbharat-voiceforbharat-murfai-activity-7493365613957124096-zmXN" />
+              </div>
+
+              <div style={{ marginBottom: '4rem' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Measuring What Matters</h3>
+                <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>Real-time analytics dashboard tracking call outcomes automatically. No sensitive data (OTPs, PINs, transcripts) ever shown.</p>
+                <img src="/analyticsimg.png" alt="Analytics dashboard" style={{ width: '100%', borderRadius: '8px', border: '1px solid var(--mist)' }} />
+              </div>
+
+              <div style={{ marginBottom: '4rem' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Bringing in a Specialist</h3>
+                <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>A dedicated Government Schemes Specialist agent handles complex queries, with full conversation context passed along seamlessly.</p>
+                <img src="/agentconnectingtodiffagent.png" alt="Multi-agent handoff" style={{ width: '100%', borderRadius: '8px', border: '1px solid var(--mist)', marginBottom: '1.5rem' }} />
+                <DemoLink url="https://www.linkedin.com/posts/gaurkrishna_voiceforbharat-voiceforbharat-murfai-ugcPost-7494129563820814336-x2af" />
+              </div>
             </div>
 
             <div style={{ marginTop: '3rem', padding: '2rem', backgroundColor: 'var(--paper-alt)', borderRadius: '8px', border: '1px solid var(--mist)' }}>
@@ -292,9 +280,7 @@ DEEPGRAM_API_KEY=your_key
 GOOGLE_API_KEY=your_key
 MURF_API_KEY=your_key`} language="env" />
 
-            <blockquote>
-              Never publish your .env file, API keys, phone numbers, or real caller data in your repo or blog post.
-            </blockquote>
+
 
             <CodeBlock code={`# Step 4 — Run the LiveKit server
 ./livekit-server --dev`} language="bash" />
