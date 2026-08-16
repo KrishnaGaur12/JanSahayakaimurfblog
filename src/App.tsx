@@ -1,6 +1,5 @@
 
 import { WaveformRule } from './components/WaveformRule';
-import { FeatureCard } from './components/FeatureCard';
 import { CodeBlock } from './components/CodeBlock';
 import { Timeline } from './components/Timeline';
 
